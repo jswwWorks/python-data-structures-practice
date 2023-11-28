@@ -21,3 +21,14 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+
+    # Generate reversed phrase
+    reversed_phrase = phrase[-1::-1]
+
+    # Get rid of whitespace
+    reversed_phrase = reversed_phrase.replace(" ", "")
+    phrase = phrase.replace(" ", "")
+
+    # Returns True if phrases are identical, returns false otherwise
+    # Handles case sensitivity
+    return reversed_phrase.lower() == phrase.lower()
