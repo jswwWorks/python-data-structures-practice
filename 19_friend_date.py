@@ -27,7 +27,4 @@ def friend_date(a, b):
 
 
     # Return true if they have hobbies in common, otherwise return false
-    if hobbies_in_common:
-        return True
-    else:
-        return False
+    return bool(hobbies_in_common)

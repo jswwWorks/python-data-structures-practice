@@ -20,8 +20,6 @@ def partition(lst, fn):
         [['hi', 'bye'], [None, 6]]
     """
 
-    # lstA = (n for n in list if fn)
-
     lst_true = []
     lst_false = []
 

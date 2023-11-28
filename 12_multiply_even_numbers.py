@@ -12,10 +12,10 @@ def multiply_even_numbers(nums):
         >>> multiply_even_numbers([1, 3, 5])
         1
     """
-    sum = 1
+    product = 1
 
     for n in nums:
         if n % 2 == 0:
-            sum = sum * n
+            product = product * n
 
-    return sum
+    return product

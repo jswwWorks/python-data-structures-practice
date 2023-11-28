@@ -12,16 +12,6 @@ def flip_case(phrase, to_swap):
 
     """
 
-#swapcase
-    #each letter of the phrase. we compare to the to_swap
-    # (regardless of to_swap case)
-    #and then we return a string with swap cases
-
-
-
-
-    # return phrase.caseswap(to_swap.lower())
-
     answer_phrase = ''
 
     for letter in phrase:
