@@ -1,3 +1,16 @@
+# Global constant of days of the week
+DAYS_LIST = [
+            "Sunday",
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday"
+            ]
+
+
+
 def weekday_name(day_of_week):
     """Return name of weekday.
 
@@ -16,16 +29,5 @@ def weekday_name(day_of_week):
     if day_of_week <= 0 or day_of_week > 7:
         return None
 
-    # List of weekdays
-    days_list = [
-                "Sunday",
-                "Monday",
-                "Tuesday",
-                "Wednesday",
-                "Thursday",
-                "Friday",
-                "Saturday"
-                ]
-
     # Adjust for indexed position
-    return days_list[day_of_week - 1]
+    return DAYS_LIST[day_of_week - 1]

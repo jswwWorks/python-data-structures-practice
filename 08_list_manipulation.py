@@ -49,7 +49,7 @@ def list_manipulation(lst, command, location, value=None):
         return None
 
 
-    # Remove item(s)
+    # Remove item
     if command == "remove":
         if location == "beginning":
             return lst.pop(0)
@@ -57,7 +57,7 @@ def list_manipulation(lst, command, location, value=None):
             return lst.pop()
 
 
-    # Add item(s) if command is add
+    # Add item if command is add
     elif command == "add":
         if location == "beginning":
             lst.insert(0, value)

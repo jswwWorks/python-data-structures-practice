@@ -22,12 +22,9 @@ def is_palindrome(phrase):
         True
     """
 
-    # Generate reversed phrase
-    reversed_phrase = phrase[-1::-1]
-
-    # Get rid of whitespace
-    reversed_phrase = reversed_phrase.replace(" ", "")
+    # Get rid of whitespace and generate reversed phrase
     phrase = phrase.replace(" ", "")
+    reversed_phrase = phrase[::-1]
 
     # Returns True if phrases are identical, returns false otherwise
     # Handles case sensitivity
