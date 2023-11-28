@@ -16,3 +16,18 @@ def friend_date(a, b):
         >>> friend_date(sauron, gandalf)
         True
     """
+
+    # Grab hobbies for each friend
+    friend_one_hobbies = a[2]
+    friend_two_hobbies = b[2]
+
+
+    # Intersection between sets
+    hobbies_in_common = set(friend_one_hobbies) & set(friend_two_hobbies)
+
+
+    # Return true if they have hobbies in common, otherwise return false
+    if hobbies_in_common:
+        return True
+    else:
+        return False
